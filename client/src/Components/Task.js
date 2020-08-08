@@ -1,6 +1,8 @@
-import React from "react";
-
+import React, { useState } from "react";
+import Modal from "./Modal";
+import ExpandedTask from "./ExpandedTask";
 const Task = ({ task, onDragStart }) => {
+  const [show, showModal] = useState(false);
 
   return (
     <div>
@@ -10,9 +12,13 @@ const Task = ({ task, onDragStart }) => {
         draggable
         className="draggable"
         style={{ backgroundColor: task.bgcolor }}
+        onClick={() => showModal(true)}
       >
         {task.name}
       </div>
+      <Modal show={show} handleClose={() => showModal(false)}>
+        <ExpandedTask task={task} />
+      </Modal>
     </div>
   );
 };

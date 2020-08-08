@@ -47,8 +47,10 @@ export default class Draggable extends Component {
   render() {
     let tasks = {};
     config.columns.forEach((column) => (tasks[column] = []));
-    this.state.tasks.forEach((t) => {
-      tasks[t.category].push(<Task task={t} onDragStart={this.onDragStart} />);
+    this.state.tasks.forEach((t, index) => {
+      tasks[t.category].push(
+        <Task key={index} task={t} onDragStart={this.onDragStart} />
+      );
     });
 
     return (

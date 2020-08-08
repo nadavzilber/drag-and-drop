@@ -13,14 +13,14 @@
   justify-content: space-between;
 }
 
-.wip {
+/* .wip {
   width: 150px;
   height: 100vh;
   left: 0;
   top: 10;
   background-color: #eeeeee;
   border-right: 1px dotted;
-}
+} */
 
 .header {
   display: inline-block;
@@ -36,7 +36,7 @@
   width: 100%;
 }
 
-.todo {
+/* .todo {
   width: 150px;
   height: 100vh;
   right: 300;
@@ -52,6 +52,15 @@
   top: 10;
   background-color: #9e9e9e;
   border-left: 1px dotted;
+} */
+
+.tasks-column {
+  width: 150px;
+  height: 100vh;
+  right: 0;
+  top: 10;
+  background-color: #c7bdbd;
+  border: 1px dotted;
 }
 
 .draggable {
