@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+  width: 95%;
+  margin: 15px auto;
+}
+
+.container-drag {
+  text-align: center;
+}
+
+.columns-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wip {
+  width: 150px;
+  height: 100vh;
+  left: 0;
+  top: 10;
+  background-color: #eeeeee;
+  border-right: 1px dotted;
+}
+
+.header {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: #e0e0e0;
+  width: 100%;
+}
+
+.task-header {
+  display: inline-block;
+  background-color: skyblue;
+  width: 100%;
+}
+
+.todo {
+  width: 150px;
+  height: 100vh;
+  right: 300;
+  top: 10;
+  background-color: #9e9e9e;
+  border-left: 1px dotted;
+}
+
+.complete {
+  width: 150px;
+  height: 100vh;
+  right: 0;
+  top: 10;
+  background-color: #9e9e9e;
+  border-left: 1px dotted;
+}
+
+.draggable {
+  font-size: 20px;
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  margin: 5px auto;
+  line-height: 5em;
+}
